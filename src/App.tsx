@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { config } from './config/config'
+import { Tommorow, Search, Weather, Yesterday } from './components'
 import './App.css'
 
 
@@ -42,6 +43,10 @@ const App = () => {
   return (
     <div>
       <h1>Weather Web App</h1>
+      <Search data={weatherData}/>
+      <Weather data={weatherData}/>
+      <Yesterday data={weatherData}/>
+      <Tommorow data={weatherData}/>
     </div>
   )
 }
